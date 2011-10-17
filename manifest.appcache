@@ -1,0 +1,13 @@
+CACHE MANIFEST
+
+CACHE:
+index.html
+css/style.css
+img/header-bg.png
+img/header-shadow.png
+img/pattern.png
+sprites.png
+js/script.js
+
+FALLBACK:
+*.html /offline.html

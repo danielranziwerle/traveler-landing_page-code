@@ -1,0 +1,101 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body { margin: 0; font-size: 13px; line-height: 1.231; }
+body, button, input, select, textarea { font-family: 'Trebuchet MS', arial, serif; color: #222; }
+
+/* yahoo css reset http://developer.yahoo.com/yui/license.html version: 3.1.1 build: 47 */
+html{color:#444;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0; outline: none;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}
+
+/* new clearfix http://perishablepress.com/press/2009/12/06/new-clearfix-hack/  */
+.clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+* html .clearfix { zoom: 1; }  /* IE6 */  
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+
+/* Global */
+.wrapper { width: 980px; margin: 0 auto; }
+.left { float: left; }
+.right { float: right; }
+.noshow { display: none; }
+b { font-weight: bold; }
+input { padding-left: 5px; }
+button { cursor: pointer; background: #999;filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4279B0', endColorstr='#23415D');background: -webkit-gradient(linear, left top, left bottom, from(#4279B0), to(#23415D));background: -moz-linear-gradient(top, #4279B0, #23415D);border: none;color: white;text-transform: uppercase;border-radius: 3px;padding: 15px;font-size: 18px;box-shadow: 1px 1px 7px #333;}
+button:hover { filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#23415D', endColorstr='#4279B0');background: -webkit-gradient(linear, left top, left bottom, from(#23415D), to(#4279B0)); background: -moz-linear-gradient(top,  #23415D,  #4279B0); }
+/* End */
+
+header > div:first-child { padding: 10px 0; background: #131920; color: #FFF; }
+	header > div:first-child h1 { float: left; font-size: 24px; margin-top: 5px; }
+	header > div:first-child form { float: right; }
+		header > div:first-child form input { border: 1px solid #666; height: 25px; margin-right: 10px; }
+		header > div:first-child form button { padding: 4px; }
+header > div:last-child { color: #FFF; position: relative; padding: 40px 0px 50px; background: #999; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#24435F', endColorstr='#569AE4');background: -webkit-gradient(linear, left top, left bottom, from(#24435F), to(#569AE4)); background: -moz-linear-gradient(top,  #24435F,  #569AE4); }
+	header > div:last-child .left  { width: 60%; }
+		header > div:last-child .left h2 { font-size: 18px; }
+	header > div:last-child .right { width: 40%; }
+header nav { position: absolute;background: white;bottom: -20px;padding: 12px 30px; }
+	header nav li { display: inline; margin-right: 15px; }
+	header nav a { text-decoration: none;text-transform: uppercase;font-size: 12px;color: #555; }
+	header nav a:hover { color: #23415D; }
+
+.content section { padding: 40px 0px 40px; }
+	.content section:first-of-type { padding-bottom: 0px; }
+	.content section h2:first-of-type { color: #478FC0; font-size: 28px; margin-bottom: 20px; }
+
+footer { background: #131920;  padding: 20px 0; color: #FFF;  }
+	footer li { display: inline; margin-right: 5px; }
+	footer li span { opacity: 0.5; }
+	footer li span:hover { opacity: 1; }
+	footer p { margin-top: 7px; }
+
+#features ul { padding: 20px; border-radius: 7px;background: #;border: 1px solid #999;filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FCFCFC', endColorstr='#F5F5F5');background: -webkit-gradient(linear, left top, left bottom, from(#FCFCFC), to(#F5F5F5));background: -moz-linear-gradient(top,  #FCFCFC,  #F5F5F5);}
+#features li { display: block;float: left;position: relative;margin: 10px 0 20px;width: 223px;padding-left: 60px;margin-right: 29px;}
+	#features li span { display: block;position: absolute;left: 0;top: 0;width: 48px; height: 48px;}
+	#features li h3 { display: block;color: #202020 !important;font-size: 20px;margin-bottom: 10px;}
+#features button { margin-top: 40px; margin-left: 28%;}
+
+table { width: 100%; -moz-box-shadow: 1px 2px 7px #555;
+-webkit-box-shadow: 1px 2px 7px #555;
+box-shadow: 1px 2px 7px #555; }
+	table thead { background: #070E16; color: #FFF; text-transform: uppercase; font-size: 24px; font-family: 'Trebuchet MS', arial, serif;}
+		thead th { border-radius: 5px 5px 0px 0px; position: relative; overflow: hidden; }
+		tbody tr:nth-child(odd) { background: #CCCCCC; }
+			tbody tr span > span:first-child { color: #636363; }
+			tbody tr span > span:last-child { color: #170F07; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 17px; }
+			tbody tr:nth-child(1) { font-family: Georgia, Times New Roman, Times, serif;  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3A6A9B', endColorstr='#579EE9');background: -webkit-gradient(linear, left top, left bottom, from(#3A6A9B), to(#579EE9));background: -moz-linear-gradient(top, #3A6A9B, #579EE9);}
+			tbody tr:nth-child(1) span > span { color: #FFF; }
+			tbody tr:nth-child(1) span > span:first-child { font-size: 26px; font-weight: 400; }
+			tbody tr:nth-child(1) span > span:last-child  { font-style: italic; font-size: 14px; text-shadow: 1px 1px #333; }
+		tfoot button  { margin: 20px 0 20px 110px; }
+	table td > span, table th > span  { display: block; text-align: center; padding: 20px; }
+#best { position: absolute;height: 15px;width: 70px;background: red;top: 9px;left: -17px;-webkit-transform: ROTATE(-40deg);color: white;padding-left: 16px;font-size: 12px;}
+
+
+#register { border-radius: 5px; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#569AE4', endColorstr='#24435F');background: -webkit-gradient(linear, left top, left bottom, from(#569AE4), to(#24435F));background: -moz-linear-gradient(top, #569AE4, #24435F);margin-top: 40px;margin-bottom: 40px;}
+#register > div { padding: 0px 50px; }
+	#register > div  > .left { background: rgba(0, 0, 0, 0.2); padding: 20px; width: 50%; border-radius: 10px;  }
+	#register > div  > .right { width: 35%; }
+#register hgroup { text-shadow: 1px 2px #333; }
+	#register hgroup h2 { color: #FFF; margin: 0; }
+	#register hgroup h3 { color: #FFF; font-size: 18px; margin-bottom: 20px; }
+#register p { color: #FFF; text-shadow: 1px 2px #333; }
+#register form div { margin-bottom: 15px; }
+	#register form label { text-shadow: 1px 2px #333; color: white;padding-left: 3px;margin-top: 10px;display: block; font-size: 14px; }
+	#register form button { padding: 5px 15px; margin-top: 20px; font-size: 14px;}
+	#register form input { height: 30px;margin-left: 3px;margin-top: 3px;width: 95%;border: 1px solid #999; }
+	#register form input:required:invalid { background: #FFF url(../img/icon-error.png) no-repeat 95%; }
+	#register form input:required:valid { background: #FFF url(../img/icon-valid.png) no-repeat 95%; }
+
+.sprites { display: inline-block; background: url(../img/sprites.png) no-repeat; } 
+.sprites.features { width: 48px; height: 48px; }
+	.sprites.features.box { background-position: 0px 0px; }
+	.sprites.features.users { background-position: 0px -48px; }
+	.sprites.features.cost { background-position: 0px -96px; }
+	.sprites.features.customizable { background-position: 0px -144px; }
+	.sprites.features.help { background-position: 0px -192px; }
+	.sprites.features.plugin { background-position: 0px -240px; } 
+
+.sprites.social { width: 24px; height: 24px; }	
+	.sprites.social.facebook { background-position: -60px 0px; }
+	.sprites.social.feed { background-position: -60px -24px; }
+	.sprites.social.twitter { background-position: -60px -48px; }
